@@ -2,7 +2,7 @@
 > 原文作者大江狗([原文链接](https://mp.weixin.qq.com/s?__biz=MjM5OTMyODA4Nw==&mid=2247484582&idx=1&sn=e5dfbccdf546feaaa07ab1f2d2e09f58&chksm=a73c649e904bed88d4198b446ef2a3ad2b5c339ab772394aa2f8149a5a82dde1b0f877906075&scene=21#wechat_redirect))，本文根据实战经历稍作修改
 
 Django在生产环境的部署还是比较复杂的, 令很多新手望而生畏, 幸运的是使用Docker容器化技术可以大大简化我们Django在生产环境的部署。Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移动的镜像中，然后发布到任何流行的 Linux机器上。由于未来使用Docker部署Django是大势所趋且小编对网上Docker部署Django的教程不甚满意(坑比较多), 于是决定自己写篇原创教程由浅入深地总结下Docker部署Django的整个过程。由于本文很长，我们将会分三篇发表于公众号【Python Web与Django开发】，主要内容如下：
-- 上篇：[使用docker部署Django + Uwsgi（单容器)](https://pages.github.com/)
+- 上篇：[使用docker部署Django + Uwsgi（单容器)](https://github.com/princewood/-Docker-Django-Django-Uwsgi)
 - 中篇：[使用docker部署Django + Uwsgi  + Nginx (双容器)](https://pages.github.com/)
 - 下篇：[使用docker-compose部署Django + Uwsgi + Nginx + MySQL + Redis (多容器组合)](https://pages.github.com/)
 
