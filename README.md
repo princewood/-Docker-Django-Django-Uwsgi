@@ -49,7 +49,7 @@ Django在生产环境的部署还是比较复杂的, 令很多新手望而生畏
  # Step 6: 查看docker版本及运行状态
  sudo docker -v
  sudo systemctl status docker
- # 
+ # WSL 2 没有systemd了，所以使用下面的代码启动docker 
  sudo /etc/init.d/docker start
  
  # Step 7：本步非必需。使用阿里云设置Docker镜像加速，注意下面链接请使用阿里云给自己的URL
