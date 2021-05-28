@@ -49,8 +49,6 @@ Django在生产环境的部署还是比较复杂的, 令很多新手望而生畏
  # Step 6: 查看docker版本及运行状态
  sudo docker -v
  sudo systemctl status docker
- # WSL 2 没有systemd了，所以使用下面的代码启动docker 
- sudo /etc/init.d/docker start
  
  # Step 7：本步非必需。使用阿里云设置Docker镜像加速，注意下面链接请使用阿里云给自己的URL
  sudo mkdir -p /etc/docker
@@ -59,8 +57,10 @@ Django在生产环境的部署还是比较复杂的, 令很多新手望而生畏
  EOF
  sudo systemctl daemon-reload
  sudo systemctl restart docker
-```
 
+ # 启动docker 
+ sudo /etc/init.d/docker start
+```
 ## 部署一个最简单的Django项目
 现在我们要在服务器上利用Docker部署下面一个最简单的Django项目。我们不使用uwsgi和nginx，数据库也使用默认的sqlite3，只把django放在一个容器里。整个项目结构如下所示，目前该项目放在宿主机(服务器)上。
 
